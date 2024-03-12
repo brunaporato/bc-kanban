@@ -172,7 +172,7 @@ section.kanban {
 
 section.kanban > * {
   flex: 1;
-  padding: 1.5rem;
+  padding: 1rem;
 }
 
 section.kanban h2 {
@@ -232,11 +232,15 @@ section.kanban h2 {
   display: flex;
   flex-direction: column;
   gap: 1.5rem;
+
+  padding: 0.25rem;
+  background: #f8f6fd;
+  border-radius: 3px;
 }
 
 /* classes para efeito de drag */
 .highlight {
-  background-color: red;
+  background-color: rgb(235, 233, 233);
 }
 
 .card, .cards {
@@ -248,7 +252,7 @@ section.kanban h2 {
 }
 
 .is-over {
-  background-color: green;
+  background-color: #c8c8c9;
 }
 
 /* reset not allowed cursor when dragging */
