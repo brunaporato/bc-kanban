@@ -1,0 +1,233 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  -webkit-font-smoothing: antialiased;
+}
+
+:root {
+  font-family: 'Inter', sans-serif;
+}
+
+body {
+  background-color: #7C3AED;
+}
+
+a {
+  text-decoration: none;
+}
+
+#app {
+  display: grid;
+  grid-template-columns: max-content 1fr;
+  gap: 2.5rem;
+
+  min-height: 100vh;
+}
+
+main {
+  padding-top: 0.5rem;
+}
+
+main .inner {
+  height: 100%;
+  background-color: #FBFAFF;
+  border-top-left-radius: 2rem;
+
+  padding: 3rem 2rem;
+}
+
+
+nav {
+  padding: 2rem 1.5rem 0 2rem;
+}
+
+ul {
+  padding-top: 3.75rem;
+  list-style: none;
+
+  display: grid;
+  gap: 2.25rem;
+
+  min-width: 7.25rem;
+}
+
+li a {
+  color: #CAB3FF;
+
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+
+  font-weight: 500;
+}
+
+a.active, a:hover {
+  color: white;
+  font-weight: 700;
+}
+
+a ion-icon {
+  font-size: 1.25rem;
+}
+
+/* Section title-avatar */
+
+section.title-avatar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  padding: 0.75rem 1.25rem;
+}
+
+.title-avatar > img {
+  width: 4rem;
+  height: 4rem;
+  border-radius: 999px;
+}
+
+h1 {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+
+  font-size: 2rem;
+  color: #403937;
+}
+
+/* Section filter */
+section.filter {
+  margin-top: 2rem;
+  padding: 0 1.5rem;
+
+  display: flex;
+  gap: 0.75rem;
+}
+
+.filter button {
+  padding: 0.75rem 2rem;
+  border: 0;
+  background-color: #7C3AED;
+  border-radius: 5px;
+  color: white;
+
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.filter button span {
+  text-shadow: 0rem 0.25rem 1rem rgba(22, 22, 22, 0.1);
+
+  font-size: 0.85rem;
+}
+
+.filter button ion-icon {
+  font-size: 1.5rem;
+}
+
+.input-wrapper {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+
+  background-color: #FFFF;
+  border: 0.7px solid #E3E3E3;
+  box-shadow: .0rem .25rem 1rem rgba(22, 22, 22, 0.1);
+
+  border-radius: 8px;
+  padding: 0 1.5rem;
+
+  flex: 1;
+}
+
+.input-wrapper ion-icon {
+  font-size: 1.5rem;
+  color: #505059;
+}
+
+.input-wrapper input {
+  border: 0;
+  width: 100%;
+  outline: 0;
+}
+
+.input-wrapper:has(:focus) {
+  outline: 2px solid #000;
+}
+
+.input-wrapper input::placeholder {
+  font-size: 1rem;
+  color: #76768A;
+}
+
+/* Section Kanban */
+section.kanban {
+  display: flex;
+  gap: 3rem;
+
+  padding-top: 2rem;
+}
+
+section.kanban > * {
+  flex: 1;
+  padding: 1.5rem;
+}
+
+section.kanban h2 {
+  font-size: 1.25rem;
+  color: #403937;
+  padding: 1.5rem 0;
+}
+
+.card {
+  padding: 1.5rem;
+
+  background-color: #FFF;
+  box-shadow: .0rem .25rem 1rem #EAE2FD;
+
+  border-radius: 8px;
+  line-height: 130%;
+}
+
+.card h3 {
+  font-size: 0.87rem;
+  color: #403937;
+}
+
+.card p {
+  font-weight: 500;
+  font-size: 0.87rem;
+
+  color: #756966;
+
+  margin-top: 0.85rem;
+}
+
+.card .tags {
+  margin-top: 0.8rem;
+
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+
+  color: #7C3AED;
+  font-weight: 500;
+}
+
+.card .tags span {
+  font-size: 0.9rem;
+  line-height: 130%;
+  background-color: #E2D6FF;
+
+  border-radius: 8px;
+
+  padding: 0.25rem 0.5rem;
+}
+
+.cards {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
